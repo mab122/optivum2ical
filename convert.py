@@ -63,7 +63,7 @@ for day in range(2,len(columns)):
 			event.add('summary', columns[day][a])
 			event.add('dtstart', actual_day+timedelta(minutes=hours[a][0]))
 			event.add('dtend', actual_day+timedelta(minutes=hours[a][1]))
-			event["RRULE"]=["FREQ=DAILY","INTERVAL=7"]
+			event.add("rrule",{"FREQ":"DAILY","INTERVAL":7})
 			cal.add_component(event)
 		pass
 	pass
