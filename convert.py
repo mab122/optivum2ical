@@ -3,9 +3,12 @@
 
 from bs4 import BeautifulSoup
 soup=False
-with open("example.html", encoding='utf-8') as f:
-	INPUT=f.read()
+# with open("example.html", encoding='utf-8') as f:
+# 	INPUT=f.read()
 
+import requests
+url = input("Enter URL with auth info (http://user:password@website.com/plany/plan.html):")
+INPUT = requests.get(url).text
 OUTPUT=""
 table=BeautifulSoup(INPUT,"html.parser").find_all("table",class_="tabela")[0]
 
@@ -41,7 +44,7 @@ today = datetime.today().replace(hour=0,minute=0,second=0,microsecond=0)
 import calendar
 hours={}
 
-nearest_monday = today+timedelta(days=(7-today.weekday()))
+nearest_monday = today+timedelta(days=(-today.weekday()))
 
 for x in range(0,len(columns[0])):
 	time=columns[1][x]
