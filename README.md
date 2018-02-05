@@ -47,4 +47,4 @@ Contribute
 Support
 -------
 
-There is no support. If you are having *issues*, please *issue* a *issue* on github *issue* tracker or [let me know](mailto:me@1CEC0FFE.black), but I don't promise anything.
+There is no support. If you are having *issues*, please *issue* a *issue* on github *issue* tracker or [let me know](mailto:me@1CEC0FFEE.black), but I don't promise anything.
