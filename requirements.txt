@@ -1,0 +1,5 @@
+beautifulsoup4==4.6.0
+icalendar==4.0.0
+python-dateutil==2.6.1
+python-distutils-extra==2.39
+requests==2.18.4

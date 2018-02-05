@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 from icalendar import Calendar, Event
 
-url = input("Enter URL with auth info (http://user:password@website.com/plany/plan.html):")
+url = input("Enter URL with auth info (ex: http://user:password@website.com/path_to/schedule.html):\n")
 response = requests.get(url).text
 table = BeautifulSoup(response, "html.parser").find_all("table", class_="tabela")[0]
 
